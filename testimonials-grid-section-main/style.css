@@ -1,0 +1,15 @@
+.container > div {
+    background:lightblue;
+    padding: 1em;
+}
+
+.container > div:nth-child(odd){
+    background: grey;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: [first-col]50% [second-col]25% [thrid-col]25%;
+    grid-template-rows: [first-row]1fr [second-row]1fr;
+}
