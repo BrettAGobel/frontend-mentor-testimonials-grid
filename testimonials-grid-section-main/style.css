@@ -1,5 +1,19 @@
-.container > div {
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+
+
+body {
+    background-color: grey;
+}
+
+.container > div {
+    display: flex;
+    flex-flow: column;
     padding: 1em;
     border-radius: 12px;
 }
@@ -9,14 +23,43 @@
 /*}*/
 
 
+/*p {*/
+/*    color: white;*/
+/*    font-size: 1em;*/
+/*}*/
+
+/*.container > div:nth-child(5) {*/
+/*    color: grey;*/
+/*}*/
+
+p:nth-child(2) {
+    font-size: 1.5em;
+}
+
+p:nth-child(3) {
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+
+
 img {
+    float: left;
     border-radius: 50%;
     border: grey solid;
     display: inline-block;
+    padding: 2px;
+    margin: 5px;
 }
 
 h1 {
+
+    display: flex;
     vertical-align: center;
+    font-size: 1em;
+    align-items: center;
+
 }
 
 
@@ -39,6 +82,7 @@ h1 {
 
 
 .daniel {
+
     background-color: blueviolet;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -73,6 +117,7 @@ h1 {
 }
 
 .kira {
+    color: black;
     background-color: whitesmoke;
     grid-column-start: 4;
     grid-column-end: 5;
