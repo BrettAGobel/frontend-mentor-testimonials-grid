@@ -1,3 +1,26 @@
+@media screen and (min-width: 1080px) {
+    .container {
+
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        /*grid-template-areas:*/
+        /*    "testimonial testimonial testimonial"*/
+        /*    "testimonial testimonial";*/
+
+        gap: 20px 20px;
+
+    }
+
+    .daniel {
+        background-image: url("images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: 80% 5%;
+}
+
+
 html {
     box-sizing: border-box;
 }
@@ -14,10 +37,19 @@ body {
 .container > div {
     display: flex;
     flex-flow: column;
+
     padding: 1em;
     border-radius: 12px;
 }
 
+/*.profile-title {*/
+/*    display: flex;*/
+/*    flex-flow: column;*/
+/*    align-content: center;*/
+/*    */
+
+
+/*}*/
 /*.container > div:nth-child(odd){*/
 /*    background: grey;*/
 /*}*/
@@ -56,33 +88,38 @@ img {
 h1 {
 
     display: flex;
+    align-items: center;
     vertical-align: center;
     font-size: 1em;
     align-items: center;
+    margin: 0;
 
 }
 
 
 
-.container {
+/*.container {*/
 
-    margin-left: 100px;
-    margin-right: 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    /*grid-template-areas:*/
-    /*    "testimonial testimonial testimonial"*/
-    /*    "testimonial testimonial";*/
+/*    margin-left: 100px;*/
+/*    margin-right: 100px;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(4, 1fr);*/
+/*    grid-template-rows: repeat(2, auto);*/
+/*    !*grid-template-areas:*!*/
+/*    !*    "testimonial testimonial testimonial"*!*/
+/*    !*    "testimonial testimonial";*!*/
 
-    gap: 20px 20px;
+/*    gap: 20px 20px;*/
 
-}
+/*}*/
 
 
 
 .daniel {
-
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 5%;
+    background-size: 25%;
     background-color: blueviolet;
     grid-column-start: 1;
     grid-column-end: 3;
